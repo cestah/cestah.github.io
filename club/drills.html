@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Drill Library | Club Admin</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo" style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">StrideX CLUB</div>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html"><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a href="teams.html"><span>Teams</span></a></li>
+                    <li class="nav-item"><a href="members.html"><span>Coaches & Students</span></a></li>
+                    <li class="nav-item"><a href="sessions.html"><span>Sessions</span></a></li>
+                    <li class="nav-item active"><a href="drills.html"><span>Drill Library</span></a></li>
+                    <li class="nav-item"><a href="reports.html"><span>Club Reports</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div>
+                    <h1 class="fade-in">Standardized Drills</h1>
+                    <p style="color: var(--text-muted);">Define the coaching standards for your entire academy.</p>
+                </div>
+                <button class="btn btn-primary">Create Club Drill</button>
+            </header>
+
+            <div class="drills-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                <!-- Drill 1 -->
+                <div class="glass-card fade-in">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                        <h3 style="color: var(--accent);">Front Foot Drive</h3>
+                        <span style="font-size: 0.75rem; background: var(--glass-bg); padding: 0.25rem 0.5rem; border-radius: 4px;">Standard #01</span>
+                    </div>
+                    <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1.5rem;">The club-wide baseline for front foot vertical bat shots. High elbow mandatory.</p>
+                    <div style="display: flex; gap: 0.5rem;">
+                        <button class="btn btn-outline" style="flex: 1; font-size: 0.75rem;">Edit Standard</button>
+                        <button class="btn btn-outline" style="flex: 1; font-size: 0.75rem;">Video Guide</button>
+                    </div>
+                </div>
+
+                <!-- Drill 2 -->
+                <div class="glass-card fade-in" style="animation-delay: 0.1s;">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1rem;">
+                        <h3 style="color: var(--accent);">Pace Trigger Movement</h3>
+                        <span style="font-size: 0.75rem; background: var(--glass-bg); padding: 0.25rem 0.5rem; border-radius: 4px;">Standard #02</span>
+                    </div>
+                    <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1.5rem;">Uniform trigger movement sequence for all pace bowling squads.</p>
+                    <div style="display: flex; gap: 0.5rem;">
+                        <button class="btn btn-outline" style="flex: 1; font-size: 0.75rem;">Edit Standard</button>
+                        <button class="btn btn-outline" style="flex: 1; font-size: 0.75rem;">Video Guide</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

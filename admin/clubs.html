@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managed Clubs | Admin Panel</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo" style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">StrideX ADMIN</div>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html"><span>Overview</span></a></li>
+                    <li class="nav-item active"><a href="clubs.html"><span>Managed Clubs</span></a></li>
+                    <li class="nav-item"><a href="finances.html"><span>Financials</span></a></li>
+                    <li class="nav-item"><a href="reports.html"><span>System Reports</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div>
+                    <h1 class="fade-in">Managed Clubs</h1>
+                    <p style="color: var(--text-muted);">Oversee partner cricket clubs and academies.</p>
+                </div>
+                <button class="btn btn-primary">Register New Club</button>
+            </header>
+
+            <div class="clubs-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem;">
+                <!-- Club Card 1 -->
+                <div class="glass-card fade-in" style="animation-delay: 0.1s;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <h3 style="color: var(--accent);">Melbourne North CC</h3>
+                        <span style="background: var(--success); color: #000; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">VERIFIED</span>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="color: var(--text-muted);">Active Coaches:</span>
+                            <span>12</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="color: var(--text-muted);">Total Students:</span>
+                            <span>156</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="color: var(--text-muted);">Monthly Revenue:</span>
+                            <span>$12,450.00</span>
+                        </div>
+                    </div>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 0.5rem;">
+                        <button class="btn btn-outline" style="flex: 1; font-size: 0.75rem;">Manage Coaches</button>
+                        <button class="btn btn-outline" style="flex: 1; font-size: 0.75rem;">Settings</button>
+                    </div>
+                </div>
+
+                <!-- Club Card 2 -->
+                <div class="glass-card fade-in" style="animation-delay: 0.2s;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <h3 style="color: var(--accent);">Sydney Sixers Academy</h3>
+                        <span style="background: var(--success); color: #000; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">VERIFIED</span>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="color: var(--text-muted);">Active Coaches:</span>
+                            <span>24</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="color: var(--text-muted);">Total Students:</span>
+                            <span>342</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="color: var(--text-muted);">Monthly Revenue:</span>
+                            <span>$28,900.00</span>
+                        </div>
+                    </div>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 0.5rem;">
+                        <button class="btn btn-outline" style="flex: 1; font-size: 0.75rem;">Manage Coaches</button>
+                        <button class="btn btn-outline" style="flex: 1; font-size: 0.75rem;">Settings</button>
+                    </div>
+                </div>
+
+                <!-- Club Card 3 -->
+                <div class="glass-card fade-in" style="animation-delay: 0.3s;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <h3 style="color: var(--accent);">Bayside Warriors</h3>
+                        <span style="background: var(--warning); color: #000; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700;">PENDING</span>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 0.75rem; font-size: 0.875rem;">
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="color: var(--text-muted);">Active Coaches:</span>
+                            <span>4</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="color: var(--text-muted);">Total Students:</span>
+                            <span>48</span>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <span style="color: var(--text-muted);">Monthly Revenue:</span>
+                            <span>$3,200.00</span>
+                        </div>
+                    </div>
+                    <div style="margin-top: 1.5rem; display: flex; gap: 0.5rem;">
+                        <button class="btn btn-primary" style="flex: 1; font-size: 0.75rem;">Review Docs</button>
+                        <button class="btn btn-outline" style="flex: 1; font-size: 0.75rem;">Contact</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

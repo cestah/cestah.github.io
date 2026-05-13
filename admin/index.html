@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel | StrideX AI</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo" style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">StrideX ADMIN</div>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item active"><a href="index.html"><span>Overview</span></a></li>
+                    <li class="nav-item"><a href="clubs.html"><span>Managed Clubs</span></a></li>
+                    <li class="nav-item"><a href="finances.html"><span>Financials</span></a></li>
+                    <li class="nav-item"><a href="reports.html"><span>System Reports</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div>
+                    <h1 class="fade-in">System Overview</h1>
+                    <p style="color: var(--text-muted);">Monitoring platform health and growth.</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn btn-outline">Export Stats</button>
+                    <button class="btn btn-primary">Add New Club</button>
+                </div>
+            </header>
+
+            <div class="stats-grid">
+                <div class="glass-card stat-card fade-in" style="animation-delay: 0.1s;">
+                    <div class="label">Total Platform Revenue</div>
+                    <div class="value" style="color: var(--accent-secondary);">$124,500</div>
+                </div>
+                <div class="glass-card stat-card fade-in" style="animation-delay: 0.2s;">
+                    <div class="label">Active Coaches</div>
+                    <div class="value" style="color: var(--accent-secondary);">42</div>
+                </div>
+                <div class="glass-card stat-card fade-in" style="animation-delay: 0.3s;">
+                    <div class="label">Active Clubs</div>
+                    <div class="value" style="color: var(--accent-secondary);">12</div>
+                </div>
+                <div class="glass-card stat-card fade-in" style="animation-delay: 0.4s;">
+                    <div class="label">AI Token Usage</div>
+                    <div class="value">88%</div>
+                </div>
+            </div>
+
+            <section class="glass-card fade-in" style="animation-delay: 0.5s;">
+                <h3 style="margin-bottom: 1.5rem;">Recent Financial Transactions</h3>
+                <table style="width: 100%; border-collapse: collapse; font-size: 0.875rem;">
+                    <thead>
+                        <tr style="text-align: left; color: var(--text-muted); border-bottom: 1px solid var(--glass-border);">
+                            <th style="padding: 1rem;">Entity</th>
+                            <th style="padding: 1rem;">Type</th>
+                            <th style="padding: 1rem;">Amount</th>
+                            <th style="padding: 1rem;">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid var(--glass-border);">
+                            <td style="padding: 1rem;">Melbourne North CC</td>
+                            <td style="padding: 1rem;">Club Payout</td>
+                            <td style="padding: 1rem;">-$1,450.00</td>
+                            <td style="padding: 1rem;"><span style="color: var(--success);">Processed</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid var(--glass-border);">
+                            <td style="padding: 1rem;">Sarah B. (Parent)</td>
+                            <td style="padding: 1rem;">Credit Purchase</td>
+                            <td style="padding: 1rem;">+$120.00</td>
+                            <td style="padding: 1rem;"><span style="color: var(--success);">Success</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

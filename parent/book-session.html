@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Session | Parent Portal</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo" style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">StrideX</div>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html"><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a href="students.html"><span>My Children</span></a></li>
+                    <li class="nav-item active"><a href="book-session.html"><span>Book Session</span></a></li>
+                    <li class="nav-item"><a href="search-coaches.html"><span>Find a Coach</span></a></li>
+                    <li class="nav-item"><a href="payments.html"><span>Payments</span></a></li>
+                    <li class="nav-item"><a href="progress.html"><span>Progress</span></a></li>
+                    <li class="nav-item"><a href="reports.html"><span>Reports</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div>
+                    <h1 class="fade-in">Book a Session</h1>
+                    <p style="color: var(--text-muted);">Schedule professional coaching for your children.</p>
+                </div>
+            </header>
+
+            <div class="glass-card fade-in" style="max-width: 800px; margin: 0 auto;">
+                <form style="display: flex; flex-direction: column; gap: 2rem;">
+                    <!-- Step 1: Select Child -->
+                    <section>
+                        <h3 style="margin-bottom: 1rem; color: var(--accent);">1. Select Child</h3>
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem;">
+                            <label class="glass-card" style="display: block; cursor: pointer; text-align: center; padding: 1rem; border: 2px solid var(--accent);">
+                                <input type="radio" name="child" value="marcus" checked style="display: none;">
+                                <div style="font-weight: 700;">Marcus B.</div>
+                                <div style="font-size: 0.75rem; color: var(--text-muted);">12 Credits</div>
+                            </label>
+                            <label class="glass-card" style="display: block; cursor: pointer; text-align: center; padding: 1rem; border: 1px solid var(--glass-border);">
+                                <input type="radio" name="child" value="sarah" style="display: none;">
+                                <div style="font-weight: 700;">Sarah B.</div>
+                                <div style="font-size: 0.75rem; color: var(--text-muted);">2 Credits</div>
+                            </label>
+                        </div>
+                    </section>
+
+                    <!-- Step 2: Select Coach -->
+                    <section>
+                        <h3 style="margin-bottom: 1rem; color: var(--accent);">2. Select Coach</h3>
+                        <select style="width: 100%; padding: 1rem; background: var(--bg-card); border: 1px solid var(--glass-border); border-radius: 8px; color: var(--text-main); outline: none;">
+                            <option>Coach Shane (Fast Bowling)</option>
+                            <option>Coach Sarah K. (Batting)</option>
+                            <option>Coach Mike (Spin & Fielding)</option>
+                        </select>
+                    </section>
+
+                    <!-- Step 3: Date & Time -->
+                    <section>
+                        <h3 style="margin-bottom: 1rem; color: var(--accent);">3. Date & Time</h3>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                            <input type="date" style="padding: 1rem; background: var(--bg-card); border: 1px solid var(--glass-border); border-radius: 8px; color: var(--text-main); outline: none;">
+                            <select style="padding: 1rem; background: var(--bg-card); border: 1px solid var(--glass-border); border-radius: 8px; color: var(--text-main); outline: none;">
+                                <option>4:00 PM - 5:00 PM</option>
+                                <option>5:00 PM - 6:00 PM</option>
+                                <option>6:00 PM - 7:00 PM</option>
+                            </select>
+                        </div>
+                    </section>
+
+                    <div style="padding-top: 1rem; border-top: 1px solid var(--glass-border); display: flex; justify-content: space-between; align-items: center;">
+                        <div>
+                            <span style="color: var(--text-muted);">Cost:</span>
+                            <span style="font-weight: 800; color: var(--warning); margin-left: 0.5rem;">1 Credit</span>
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick="alert('Session Booked!')">Confirm Booking</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

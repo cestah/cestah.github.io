@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invites | Admin Panel</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo" style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">StrideX ADMIN</div>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html"><span>Overview</span></a></li>
+                    <li class="nav-item"><a href="clubs.html"><span>Managed Clubs</span></a></li>
+                    <li class="nav-item"><a href="register-entity.html"><span>Registration</span></a></li>
+                    <li class="nav-item active"><a href="invites.html"><span>Invites</span></a></li>
+                    <li class="nav-item"><a href="finances.html"><span>Financials</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div>
+                    <h1 class="fade-in">Invitation Management</h1>
+                    <p style="color: var(--text-muted);">Send onboarding links to coaches and students.</p>
+                </div>
+            </header>
+
+            <div class="invites-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                <section class="glass-card fade-in" style="animation-delay: 0.1s;">
+                    <h3 style="margin-bottom: 1.5rem;">Invite Coaches</h3>
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div style="display: flex; gap: 0.5rem;">
+                            <input type="email" placeholder="coach@example.com" style="flex: 1; padding: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--glass-bg); color: var(--text-main); outline: none;">
+                            <button class="btn btn-primary">Send Invite</button>
+                        </div>
+                        <div style="margin-top: 1rem;">
+                            <h4 style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.75rem;">Pending Coach Invites</h4>
+                            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                <div style="padding: 0.75rem; background: var(--glass-bg); border-radius: 8px; display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
+                                    <span>ricky.p@academy.com</span>
+                                    <span style="color: var(--warning);">Expires in 2d</span>
+                                </div>
+                                <div style="padding: 0.75rem; background: var(--glass-bg); border-radius: 8px; display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
+                                    <span>kumar.s@cricket.org</span>
+                                    <span style="color: var(--warning);">Expires in 4d</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="glass-card fade-in" style="animation-delay: 0.2s;">
+                    <h3 style="margin-bottom: 1.5rem;">Invite Students / Parents</h3>
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div style="display: flex; gap: 0.5rem;">
+                            <input type="email" placeholder="parent@example.com" style="flex: 1; padding: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--glass-bg); color: var(--text-main); outline: none;">
+                            <button class="btn btn-primary">Send Invite</button>
+                        </div>
+                        <div style="margin-top: 1rem;">
+                            <h4 style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 0.75rem;">Recent Student Invites</h4>
+                            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                <div style="padding: 0.75rem; background: var(--glass-bg); border-radius: 8px; display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
+                                    <span>parent.smith@gmail.com</span>
+                                    <span style="color: var(--success);">Accepted</span>
+                                </div>
+                                <div style="padding: 0.75rem; background: var(--glass-bg); border-radius: 8px; display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
+                                    <span>j.doe@outlook.com</span>
+                                    <span style="color: var(--warning);">Pending</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

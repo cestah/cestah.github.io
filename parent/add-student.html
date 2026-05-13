@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student | Parent Portal</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo" style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">StrideX</div>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html"><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a href="students.html"><span>My Children</span></a></li>
+                    <li class="nav-item"><a href="book-session.html"><span>Book Session</span></a></li>
+                    <li class="nav-item"><a href="search-coaches.html"><span>Find a Coach</span></a></li>
+                    <li class="nav-item"><a href="payments.html"><span>Payments</span></a></li>
+                    <li class="nav-item"><a href="progress.html"><span>Progress</span></a></li>
+                    <li class="nav-item"><a href="reports.html"><span>Reports</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div>
+                    <h1 class="fade-in">Add a New Student</h1>
+                    <p style="color: var(--text-muted);">Register your child to start their AI coaching journey.</p>
+                </div>
+            </header>
+
+            <div class="glass-card fade-in" style="max-width: 600px; margin: 0 auto;">
+                <form style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                            <label style="font-size: 0.875rem; color: var(--text-muted);">First Name</label>
+                            <input type="text" placeholder="e.g. Leo" style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--glass-bg); color: var(--text-main); outline: none;">
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                            <label style="font-size: 0.875rem; color: var(--text-muted);">Last Name</label>
+                            <input type="text" placeholder="e.g. Smith" style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--glass-bg); color: var(--text-main); outline: none;">
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <label style="font-size: 0.875rem; color: var(--text-muted);">Date of Birth</label>
+                        <input type="date" style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--glass-bg); color: var(--text-main); outline: none;">
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <label style="font-size: 0.875rem; color: var(--text-muted);">Cricket Skill Level</label>
+                        <select style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--glass-bg); color: var(--text-main); outline: none;">
+                            <option>Beginner (Junior Blasters)</option>
+                            <option>Intermediate (Club Cricket)</option>
+                            <option>Advanced (Representative)</option>
+                        </select>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                        <label style="font-size: 0.875rem; color: var(--text-muted);">Assigned Academy (Optional)</label>
+                        <input type="text" placeholder="Search for a club..." style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--glass-bg); color: var(--text-main); outline: none;">
+                    </div>
+                    <div style="margin-top: 1rem; display: flex; gap: 1rem;">
+                        <button type="button" class="btn btn-primary" style="flex: 1; justify-content: center;" onclick="location.href='index.html'">Add Student</button>
+                        <button type="button" class="btn btn-outline" style="flex: 1; justify-content: center;" onclick="history.back()">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

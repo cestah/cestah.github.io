@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | StrideX AI</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+</head>
+<body style="display: flex; align-items: center; justify-content: center; background: radial-gradient(circle at top right, var(--accent-glow), transparent);">
+    <div class="glass-card fade-in" style="width: 100%; max-width: 400px; padding: 3rem;">
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <h1 style="color: var(--accent); margin-bottom: 0.5rem;">StrideX</h1>
+            <p style="color: var(--text-muted);">Sign in to your account</p>
+        </div>
+        <form style="display: flex; flex-direction: column; gap: 1.5rem;">
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <label style="font-size: 0.875rem; color: var(--text-muted);">Email Address</label>
+                <input type="email" placeholder="you@example.com" style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--glass-bg); color: var(--text-main); outline: none;">
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                <label style="font-size: 0.875rem; color: var(--text-muted);">Password</label>
+                <input type="password" placeholder="••••••••" style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--glass-bg); color: var(--text-main); outline: none;">
+            </div>
+            <button type="button" class="btn btn-primary" style="width: 100%; justify-content: center; margin-top: 1rem;" onclick="location.href='index.html'">Sign In</button>
+        </form>
+        <div style="margin-top: 2rem; text-align: center; font-size: 0.875rem; color: var(--text-muted);">
+            Don't have an account? <a href="register.html" style="color: var(--accent);">Register here</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coach Profile | StrideX AI</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo" style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">StrideX</div>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html"><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a href="sessions.html"><span>Sessions</span></a></li>
+                    <li class="nav-item"><a href="drills.html"><span>Drill Library</span></a></li>
+                    <li class="nav-item"><a href="video-analysis.html"><span>Video Analysis</span></a></li>
+                    <li class="nav-item"><a href="progress.html"><span>Student Progress</span></a></li>
+                    <li class="nav-item"><a href="earnings.html"><span>Earnings</span></a></li>
+                    <li class="nav-item"><a href="invites.html"><span>Invites</span></a></li>
+                    <li class="nav-item active"><a href="profile.html"><span>My Profile</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div>
+                    <h1 class="fade-in">Coach Profile</h1>
+                    <p style="color: var(--text-muted);">Manage your public bio, certifications, and availability.</p>
+                </div>
+            </header>
+
+            <div class="profile-grid" style="display: grid; grid-template-columns: 1fr 2fr; gap: 2rem;">
+                <section class="glass-card fade-in">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div style="width: 120px; height: 120px; background: var(--accent); border-radius: 50%; margin: 0 auto 1.5rem;"></div>
+                        <button class="btn btn-outline" style="font-size: 0.75rem;">Change Photo</button>
+                    </div>
+                    <div style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div style="font-size: 0.875rem;">
+                            <div style="color: var(--text-muted); margin-bottom: 0.25rem;">Certification</div>
+                            <div style="font-weight: 700;">Cricket Australia Level 3</div>
+                        </div>
+                        <div style="font-size: 0.875rem;">
+                            <div style="color: var(--text-muted); margin-bottom: 0.25rem;">Club Affiliation</div>
+                            <div style="font-weight: 700;">Melbourne North CC</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="glass-card fade-in" style="animation-delay: 0.1s;">
+                    <form style="display: flex; flex-direction: column; gap: 1.5rem;">
+                        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                            <label style="font-size: 0.875rem; color: var(--text-muted);">Professional Bio</label>
+                            <textarea rows="4" style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--glass-bg); color: var(--text-main); outline: none; resize: none;">Elite level coach with 15+ years of experience in state-level cricket. Specializing in fast bowling biomechanics and player mental conditioning.</textarea>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                            <label style="font-size: 0.875rem; color: var(--text-muted);">Specialties (Comma separated)</label>
+                            <input type="text" value="Fast Bowling, Player Mentality, T20 Strategy" style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--glass-bg); color: var(--text-main); outline: none;">
+                        </div>
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                <label style="font-size: 0.875rem; color: var(--text-muted);">Hourly Rate (AUD)</label>
+                                <input type="number" value="120" style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--glass-bg); color: var(--text-main); outline: none;">
+                            </div>
+                            <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                                <label style="font-size: 0.875rem; color: var(--text-muted);">Availability Status</label>
+                                <select style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--glass-bg); color: var(--text-main); outline: none;">
+                                    <option>Accepting New Students</option>
+                                    <option>Waitlist Only</option>
+                                    <option>Unavailable</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary" style="align-self: flex-end; padding: 0.75rem 2rem;">Save Changes</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

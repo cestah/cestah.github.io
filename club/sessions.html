@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Sessions | Club Admin</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo" style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">StrideX CLUB</div>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html"><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a href="teams.html"><span>Teams</span></a></li>
+                    <li class="nav-item"><a href="members.html"><span>Coaches & Students</span></a></li>
+                    <li class="nav-item active"><a href="sessions.html"><span>Sessions</span></a></li>
+                    <li class="nav-item"><a href="drills.html"><span>Drill Library</span></a></li>
+                    <li class="nav-item"><a href="reports.html"><span>Club Reports</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div>
+                    <h1 class="fade-in">Club Sessions</h1>
+                    <p style="color: var(--text-muted);">Coordinate ground bookings, net sessions, and team training.</p>
+                </div>
+                <button class="btn btn-primary">Schedule Session</button>
+            </header>
+
+            <div class="calendar-strip glass-card fade-in" style="margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center;">
+                <button class="btn btn-outline" style="padding: 0.5rem;">&lt;</button>
+                <div style="display: flex; gap: 1rem;">
+                    <div style="text-align: center; padding: 0.5rem 1rem; background: var(--accent); border-radius: 8px; color: #000;">
+                        <div style="font-size: 0.75rem; font-weight: 700;">WED</div>
+                        <div style="font-size: 1.25rem; font-weight: 800;">13</div>
+                    </div>
+                    <div style="text-align: center; padding: 0.5rem 1rem; background: var(--glass-bg); border-radius: 8px;">
+                        <div style="font-size: 0.75rem; color: var(--text-muted);">THU</div>
+                        <div style="font-size: 1.25rem; font-weight: 800;">14</div>
+                    </div>
+                    <div style="text-align: center; padding: 0.5rem 1rem; background: var(--glass-bg); border-radius: 8px;">
+                        <div style="font-size: 0.75rem; color: var(--text-muted);">FRI</div>
+                        <div style="font-size: 1.25rem; font-weight: 800;">15</div>
+                    </div>
+                </div>
+                <button class="btn btn-outline" style="padding: 0.5rem;">&gt;</button>
+            </div>
+
+            <div class="sessions-list" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                <!-- Session 1 -->
+                <div class="glass-card fade-in" style="display: grid; grid-template-columns: 100px 1fr 1fr 1fr; align-items: center; gap: 2rem;">
+                    <div style="font-weight: 800; font-size: 1.1rem;">4:00 PM</div>
+                    <div>
+                        <div style="font-weight: 700;">U16 A-Grade Practice</div>
+                        <div style="font-size: 0.875rem; color: var(--text-muted);">Nets 1-4</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.875rem; color: var(--text-muted);">Coach</div>
+                        <div style="font-weight: 600;">Coach Shane</div>
+                    </div>
+                    <div style="text-align: right;">
+                        <button class="btn btn-outline" style="font-size: 0.75rem;">Modify</button>
+                    </div>
+                </div>
+
+                <!-- Session 2 -->
+                <div class="glass-card fade-in" style="display: grid; grid-template-columns: 100px 1fr 1fr 1fr; align-items: center; gap: 2rem; animation-delay: 0.1s;">
+                    <div style="font-weight: 800; font-size: 1.1rem;">5:30 PM</div>
+                    <div>
+                        <div style="font-weight: 700;">Junior Blasters Academy</div>
+                        <div style="font-size: 0.875rem; color: var(--text-muted);">Main Oval</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.875rem; color: var(--text-muted);">Coach</div>
+                        <div style="font-weight: 600;">Sarah K.</div>
+                    </div>
+                    <div style="text-align: right;">
+                        <button class="btn btn-outline" style="font-size: 0.75rem;">Modify</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

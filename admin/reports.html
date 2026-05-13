@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Reports | Admin Panel</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo" style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">StrideX ADMIN</div>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html"><span>Overview</span></a></li>
+                    <li class="nav-item"><a href="clubs.html"><span>Managed Clubs</span></a></li>
+                    <li class="nav-item"><a href="finances.html"><span>Financials</span></a></li>
+                    <li class="nav-item active"><a href="reports.html"><span>System Reports</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div>
+                    <h1 class="fade-in">System Reports</h1>
+                    <p style="color: var(--text-muted);">Aggregate data on platform performance and AI metrics.</p>
+                </div>
+                <button class="btn btn-primary">Schedule New Report</button>
+            </header>
+
+            <div class="reports-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                <div class="glass-card fade-in" style="animation-delay: 0.1s;">
+                    <div style="font-size: 0.75rem; color: var(--accent); font-weight: 700; margin-bottom: 0.5rem;">AI INFRASTRUCTURE</div>
+                    <h3 style="margin-bottom: 1rem;">Video Processing Efficiency</h3>
+                    <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1.5rem;">Average processing time: 4.2 minutes. Vertex AI cost per analysis: $0.34.</p>
+                    <button class="btn btn-outline" style="width: 100%;">View Full Analytics</button>
+                </div>
+
+                <div class="glass-card fade-in" style="animation-delay: 0.2s;">
+                    <div style="font-size: 0.75rem; color: var(--accent); font-weight: 700; margin-bottom: 0.5rem;">RETENTION</div>
+                    <h3 style="margin-bottom: 1rem;">Parent Engagement Index</h3>
+                    <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1.5rem;">84% of parents open AI reports within 2 hours of notification.</p>
+                    <button class="btn btn-outline" style="width: 100%;">Cohort Analysis</button>
+                </div>
+
+                <div class="glass-card fade-in" style="animation-delay: 0.3s;">
+                    <div style="font-size: 0.75rem; color: var(--accent); font-weight: 700; margin-bottom: 0.5rem;">MARKETPLACE</div>
+                    <h3 style="margin-bottom: 1rem;">Supply/Demand Heatmap</h3>
+                    <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1.5rem;">Peak demand identified in SE Suburbs (3:30 PM - 6:00 PM).</p>
+                    <button class="btn btn-outline" style="width: 100%;">View Heatmap</button>
+                </div>
+            </div>
+
+            <section class="glass-card fade-in" style="margin-top: 2rem; animation-delay: 0.4s;">
+                <h3 style="margin-bottom: 1.5rem;">Available Scheduled Exports</h3>
+                <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: var(--glass-bg); border-radius: 8px;">
+                        <div>
+                            <div style="font-weight: 600;">Monthly Financial Summary</div>
+                            <div style="font-size: 0.75rem; color: var(--text-muted);">PDF | CSV • Next run: June 1, 2026</div>
+                        </div>
+                        <button class="btn btn-outline" style="padding: 0.5rem;">Edit</button>
+                    </div>
+                    <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem; background: var(--glass-bg); border-radius: 8px;">
+                        <div>
+                            <div style="font-weight: 600;">AI Analysis Quality Audit</div>
+                            <div style="font-size: 0.75rem; color: var(--text-muted);">JSON • Next run: Weekly (Monday)</div>
+                        </div>
+                        <button class="btn btn-outline" style="padding: 0.5rem;">Edit</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

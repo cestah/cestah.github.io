@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drill Library | Coach Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo" style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">StrideX</div>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html"><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a href="sessions.html"><span>Sessions</span></a></li>
+                    <li class="nav-item active"><a href="drills.html"><span>Drill Library</span></a></li>
+                    <li class="nav-item"><a href="video-analysis.html"><span>Video Analysis</span></a></li>
+                    <li class="nav-item"><a href="progress.html"><span>Student Progress</span></a></li>
+                    <li class="nav-item"><a href="earnings.html"><span>Earnings</span></a></li>
+                    <li class="nav-item"><a href="invites.html"><span>Invites</span></a></li>
+                    <li class="nav-item"><a href="profile.html"><span>My Profile</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div>
+                    <h1 class="fade-in">Practice Drills</h1>
+                    <p style="color: var(--text-muted);">Create and assign drills for independent practice.</p>
+                </div>
+                <button class="btn btn-primary">Create New Drill</button>
+            </header>
+
+            <div class="drills-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                <!-- Drill Card -->
+                <div class="glass-card fade-in" style="animation-delay: 0.1s;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
+                        <h3 style="color: var(--accent);">Static Weight Transfer</h3>
+                        <span style="font-size: 0.75rem; background: var(--glass-bg); padding: 0.25rem 0.5rem; border-radius: 4px;">Batting</span>
+                    </div>
+                    <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1.5rem;">Focus on front foot landing before bat swing initiates. Use a tee or drop feed.</p>
+                    <div style="display: flex; gap: 0.5rem;">
+                        <button class="btn btn-outline" style="flex: 1; font-size: 0.75rem;">Edit Drill</button>
+                        <button class="btn btn-primary" style="flex: 1; font-size: 0.75rem;">Assign to Student</button>
+                    </div>
+                </div>
+
+                <!-- Create New Drill Placeholder -->
+                <div class="glass-card fade-in" style="animation-delay: 0.2s; border: 2px dashed var(--glass-border); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                    <div style="font-size: 2rem; margin-bottom: 1rem;">+</div>
+                    <h3 style="margin-bottom: 0.5rem;">Add New Template</h3>
+                    <p style="font-size: 0.75rem; color: var(--text-muted);">Standardize your coaching methods.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

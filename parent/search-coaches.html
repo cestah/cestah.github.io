@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Coaches | Parent Portal</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo" style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">StrideX</div>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html"><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a href="students.html"><span>My Children</span></a></li>
+                    <li class="nav-item"><a href="book-session.html"><span>Book Session</span></a></li>
+                    <li class="nav-item active"><a href="search-coaches.html"><span>Find a Coach</span></a></li>
+                    <li class="nav-item"><a href="payments.html"><span>Payments</span></a></li>
+                    <li class="nav-item"><a href="progress.html"><span>Progress</span></a></li>
+                    <li class="nav-item"><a href="reports.html"><span>Reports</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div>
+                    <h1 class="fade-in">Find a Coach</h1>
+                    <p style="color: var(--text-muted);">Search for elite coaches by specialty or location.</p>
+                </div>
+            </header>
+
+            <div class="search-bar glass-card fade-in" style="margin-bottom: 2rem; display: flex; gap: 1rem;">
+                <input type="text" placeholder="Search by name, specialty (e.g. Fast Bowling), or location..." style="flex: 1; padding: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--glass-bg); color: var(--text-main); outline: none;">
+                <button class="btn btn-primary">Search</button>
+            </div>
+
+            <div class="coach-results" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                <!-- Coach 1 -->
+                <div class="glass-card fade-in" style="animation-delay: 0.1s;">
+                    <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1.5rem;">
+                        <div style="width: 60px; height: 60px; background: var(--accent); border-radius: 50%;"></div>
+                        <div>
+                            <h3 style="font-size: 1.1rem;">Coach Shane</h3>
+                            <div style="font-size: 0.75rem; color: var(--text-muted);">Elite Level 3 | Fast Bowling</div>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1.5rem;">Specialist in biomechanical analysis for pace bowlers. 15+ years experience.</p>
+                    <div style="display: flex; gap: 0.5rem;">
+                        <button class="btn btn-primary" style="flex: 1; font-size: 0.75rem;">Book Session</button>
+                        <button class="btn btn-outline" style="flex: 1; font-size: 0.75rem;">View Profile</button>
+                    </div>
+                </div>
+
+                <!-- Coach 2 -->
+                <div class="glass-card fade-in" style="animation-delay: 0.2s;">
+                    <div style="display: flex; gap: 1rem; align-items: center; margin-bottom: 1.5rem;">
+                        <div style="width: 60px; height: 60px; background: var(--accent); border-radius: 50%;"></div>
+                        <div>
+                            <h3 style="font-size: 1.1rem;">Sarah K.</h3>
+                            <div style="font-size: 0.75rem; color: var(--text-muted);">Level 2 | Batting Specialist</div>
+                        </div>
+                    </div>
+                    <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1.5rem;">Focus on T20 power hitting and technical stroke play. Great with juniors.</p>
+                    <div style="display: flex; gap: 0.5rem;">
+                        <button class="btn btn-primary" style="flex: 1; font-size: 0.75rem;">Book Session</button>
+                        <button class="btn btn-outline" style="flex: 1; font-size: 0.75rem;">View Profile</button>
+                    </div>
+                </div>
+
+                <!-- Invite a Coach -->
+                <div class="glass-card fade-in" style="animation-delay: 0.3s; border: 2px dashed var(--glass-border); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;">
+                    <h3 style="margin-bottom: 0.5rem;">Coach not here?</h3>
+                    <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1.5rem;">Invite your own coach to use the platform.</p>
+                    <button class="btn btn-outline" onclick="alert('Invite Sent to Coach!')">Send Invite to Coach</button>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

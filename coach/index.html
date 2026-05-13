@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coach Dashboard | StrideX AI</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo" style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">StrideX</div>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item active"><a href="index.html"><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a href="sessions.html"><span>Sessions</span></a></li>
+                    <li class="nav-item"><a href="drills.html"><span>Drill Library</span></a></li>
+                    <li class="nav-item"><a href="video-analysis.html"><span>Video Analysis</span></a></li>
+                    <li class="nav-item"><a href="progress.html"><span>Student Progress</span></a></li>
+                    <li class="nav-item"><a href="earnings.html"><span>Earnings</span></a></li>
+                    <li class="nav-item"><a href="invites.html"><span>Invites</span></a></li>
+                    <li class="nav-item"><a href="profile.html"><span>My Profile</span></a></li>
+                </ul>
+            </nav>
+            <div class="profile-summary" style="margin-top: auto; padding-top: 2rem; border-top: 1px solid var(--glass-border);">
+                <div style="font-weight: 600;">Coach Shane</div>
+                <div style="font-size: 0.75rem; color: var(--text-muted);">Elite Level 3</div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div>
+                    <h1 class="fade-in">Coach Dashboard</h1>
+                    <p style="color: var(--text-muted);">Welcome back: you have 4 sessions today.</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn btn-primary">Create Session</button>
+                </div>
+            </header>
+
+            <div class="stats-grid">
+                <div class="glass-card stat-card fade-in" style="animation-delay: 0.1s;">
+                    <div class="label">Monthly Earnings</div>
+                    <div class="value">$4,250.00</div>
+                </div>
+                <div class="glass-card stat-card fade-in" style="animation-delay: 0.2s;">
+                    <div class="label">Total Students</div>
+                    <div class="value">24</div>
+                </div>
+                <div class="glass-card stat-card fade-in" style="animation-delay: 0.3s;">
+                    <div class="label">AI Analyses</div>
+                    <div class="value">142</div>
+                </div>
+                <div class="glass-card stat-card fade-in" style="animation-delay: 0.4s;">
+                    <div class="label">Avg. Rating</div>
+                    <div class="value">4.9/5</div>
+                </div>
+            </div>
+
+            <div class="dashboard-grid" style="display: grid; grid-template-columns: 2fr 1fr; gap: 1.5rem;">
+                <section class="glass-card fade-in" style="animation-delay: 0.5s;">
+                    <h3 style="margin-bottom: 1rem;">Upcoming Sessions</h3>
+                    <div class="session-list" style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div style="padding: 1rem; background: var(--glass-bg); border-radius: 8px; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <div style="font-weight: 600;">Individual Batting - David W.</div>
+                                <div style="font-size: 0.875rem; color: var(--text-muted);">Today, 4:00 PM (AEST)</div>
+                            </div>
+                            <button class="btn btn-outline" style="padding: 0.5rem 1rem;">View Details</button>
+                        </div>
+                        <div style="padding: 1rem; background: var(--glass-bg); border-radius: 8px; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <div style="font-weight: 600;">Power Hitting - Sarah K.</div>
+                                <div style="font-size: 0.875rem; color: var(--text-muted);">Today, 5:30 PM (AEST)</div>
+                            </div>
+                            <button class="btn btn-outline" style="padding: 0.5rem 1rem;">View Details</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="glass-card fade-in" style="animation-delay: 0.6s;">
+                    <h3 style="margin-bottom: 1rem;">Recent AI Analysis</h3>
+                    <div class="ai-list" style="display: flex; flex-direction: column; gap: 1rem;">
+                        <div style="display: flex; gap: 1rem; align-items: center;">
+                            <div style="width: 40px; height: 40px; background: var(--accent); border-radius: 8px;"></div>
+                            <div>
+                                <div style="font-weight: 600; font-size: 0.875rem;">Marcus B. - Cover Drive</div>
+                                <div style="font-size: 0.75rem; color: var(--text-muted);">Ready: 92% Efficiency</div>
+                            </div>
+                        </div>
+                        <div style="display: flex; gap: 1rem; align-items: center;">
+                            <div style="width: 40px; height: 40px; background: var(--accent); border-radius: 8px;"></div>
+                            <div>
+                                <div style="font-weight: 600; font-size: 0.875rem;">Liam T. - Leg Spin</div>
+                                <div style="font-size: 0.75rem; color: var(--text-muted);">Processing: 45% complete</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

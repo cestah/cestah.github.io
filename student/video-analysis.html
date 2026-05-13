@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Feedback | Student Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+</head>
+
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo" style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">StrideX</div>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html"><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a href="sessions.html"><span>My Sessions</span></a></li>
+                    <li class="nav-item"><a href="drills.html"><span>Practice Drills</span></a></li>
+                    <li class="nav-item active"><a href="video-analysis.html"><span>AI Feedback</span></a></li>
+                    <li class="nav-item"><a href="progress.html"><span>My Progress</span></a></li>
+                    <li class="nav-item"><a href="profile.html"><span>My Profile</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div>
+                    <h1 class="fade-in">AI Video Feedback</h1>
+                    <p style="color: var(--text-muted);">Upload your technique for instant biomechanical analysis.</p>
+                </div>
+            </header>
+
+            <div class="analysis-layout" style="display: grid; grid-template-columns: 1.5fr 1fr; gap: 2rem;">
+                <div class="upload-section">
+                    <!-- Video Upload Area -->
+                    <div class="glass-card fade-in"
+                        style="border: 2px dashed var(--accent); padding: 4rem; text-align: center; margin-bottom: 2rem; cursor: pointer;"
+                        onclick="document.getElementById('videoUpload').click()">
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">📤</div>
+                        <h3 style="color: var(--accent);">Tap to Upload Video</h3>
+                        <p style="font-size: 0.875rem; color: var(--text-muted); margin-top: 0.5rem;">Formats: MP4, MOV
+                            • Max 20MB</p>
+                        <input type="file" id="videoUpload" style="display: none;" accept="video/*"
+                            onchange="alert('Video uploaded! Starting AI analysis...')">
+                    </div>
+
+                    <!-- Latest Analysis Preview -->
+                    <div class="glass-card fade-in" style="padding: 0; overflow: hidden; animation-delay: 0.1s;">
+                        <div style="aspect-ratio: 16/9; background: #000; position: relative;">
+                            <div
+                                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; color: var(--accent);">
+                                <div style="text-align: center;">
+                                    <div style="font-size: 3rem; margin-bottom: 1rem;">▶</div>
+                                    <div style="font-size: 0.75rem;">BIOMECHANICAL OVERLAY ACTIVE</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="padding: 1.5rem;">
+                            <h3 style="margin-bottom: 0.5rem;">Marcus B. • Cover Drive Rep 4</h3>
+                            <p style="font-size: 0.875rem; color: var(--text-muted);">Analyzed via Vertex AI Video
+                                Intelligence • May 12, 2026</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="feedback-sidebar">
+                    <div class="glass-card fade-in" style="animation-delay: 0.2s; margin-bottom: 1.5rem;">
+                        <h4 style="margin-bottom: 1rem; color: var(--accent);">AI Coach Insights</h4>
+                        <div style="display: flex; flex-direction: column; gap: 1rem;">
+                            <div
+                                style="padding: 1rem; background: var(--glass-bg); border-radius: 8px; border-left: 4px solid var(--success);">
+                                <div style="font-weight: 700; font-size: 0.875rem;">Backlift Height</div>
+                                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem;">Optimal
+                                    (108°). Power potential maximized.</div>
+                            </div>
+                            <div
+                                style="padding: 1rem; background: var(--glass-bg); border-radius: 8px; border-left: 4px solid var(--warning);">
+                                <div style="font-weight: 700; font-size: 0.875rem;">Front Foot Landing</div>
+                                <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem;">Delayed
+                                    by 0.12s. Focus on triggering earlier.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="glass-card fade-in" style="animation-delay: 0.3s;">
+                        <h4 style="margin-bottom: 1rem;">Coach's Review</h4>
+                        <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                            <div
+                                style="width: 40px; height: 40px; background: var(--accent); border-radius: 50%; flex-shrink: 0;">
+                            </div>
+                            <div>
+                                <div style="font-weight: 700; font-size: 0.875rem;">Coach Shane</div>
+                                <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.25rem;">"Great
+                                    balance here Marcus. The AI correctly identified your late trigger. Let's work on
+                                    the 'Static Weight Transfer' drill tomorrow."</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Drills | Student Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+</head>
+
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo" style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">StrideX</div>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html"><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a href="sessions.html"><span>My Sessions</span></a></li>
+                    <li class="nav-item active"><a href="drills.html"><span>Practice Drills</span></a></li>
+                    <li class="nav-item"><a href="video-analysis.html"><span>AI Feedback</span></a></li>
+                    <li class="nav-item"><a href="progress.html"><span>My Progress</span></a></li>
+                    <li class="nav-item"><a href="profile.html"><span>My Profile</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div>
+                    <h1 class="fade-in">Practice Drills</h1>
+                    <p style="color: var(--text-muted);">Assigned exercises and independent training modules.</p>
+                </div>
+            </header>
+
+            <div class="drills-grid"
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+                <div class="glass-card fade-in">
+                    <div style="font-size: 0.75rem; color: var(--accent); font-weight: 700; margin-bottom: 0.5rem;">
+                        ASSIGNED BY COACH SHANE</div>
+                    <h3 style="margin-bottom: 1rem;">Static Weight Transfer</h3>
+                    <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1.5rem;">Focus on front foot
+                        landing before bat swing initiates. Perform 3 sets of 15 reps.</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
+                        <button class="btn btn-primary" style="font-size: 0.75rem;"
+                            onclick="location.href='video-analysis.html'">Record & Analyze</button>
+                        <span style="font-size: 0.75rem; color: var(--text-muted);">80% Mastered</span>
+                    </div>
+                </div>
+
+                <div class="glass-card fade-in" style="animation-delay: 0.1s;">
+                    <div style="font-size: 0.75rem; color: var(--text-muted); font-weight: 700; margin-bottom: 0.5rem;">
+                        SELF-PRACTICE</div>
+                    <h3 style="margin-bottom: 1rem;">High Elbow Shadow Batting</h3>
+                    <p style="font-size: 0.875rem; color: var(--text-muted); margin-bottom: 1.5rem;">Maintain a vertical
+                        bat path through the line of the ball. Use a mirror for self-correction.</p>
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: auto;">
+                        <button class="btn btn-outline" style="font-size: 0.75rem;">Watch Tutorial</button>
+                        <span style="font-size: 0.75rem; color: var(--text-muted);">Pending</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

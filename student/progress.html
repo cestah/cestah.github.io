@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Progress | Student Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+</head>
+
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo" style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">StrideX</div>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html"><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a href="sessions.html"><span>My Sessions</span></a></li>
+                    <li class="nav-item"><a href="drills.html"><span>Practice Drills</span></a></li>
+                    <li class="nav-item"><a href="video-analysis.html"><span>AI Feedback</span></a></li>
+                    <li class="nav-item active"><a href="progress.html"><span>My Progress</span></a></li>
+                    <li class="nav-item"><a href="profile.html"><span>My Profile</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div>
+                    <h1 class="fade-in">Progress Analytics</h1>
+                    <p style="color: var(--text-muted);">Biomechanical trends and skill acquisition history.</p>
+                </div>
+            </header>
+
+            <div class="stats-grid">
+                <div class="glass-card stat-card fade-in">
+                    <div class="label">Avg Bowl Speed</div>
+                    <div class="value">118 km/h</div>
+                    <div style="font-size: 0.75rem; color: var(--success); margin-top: 0.5rem;">+4.2% this month</div>
+                </div>
+                <div class="glass-card stat-card fade-in" style="animation-delay: 0.1s;">
+                    <div class="label">Release Consistency</div>
+                    <div class="value">92%</div>
+                    <div style="font-size: 0.75rem; color: var(--success); margin-top: 0.5rem;">+2.1% this month</div>
+                </div>
+                <div class="glass-card stat-card fade-in" style="animation-delay: 0.2s;">
+                    <div class="label">Drill Completion</div>
+                    <div class="value">88%</div>
+                    <div style="font-size: 0.75rem; color: var(--text-muted); margin-top: 0.5rem;">Steady pace</div>
+                </div>
+            </div>
+
+            <div class="dashboard-grid" style="display: grid; grid-template-columns: 2fr 1fr; gap: 1.5rem;">
+                <!-- Skill Chart -->
+                <section class="glass-card fade-in" style="animation-delay: 0.3s;">
+                    <h3 style="margin-bottom: 1.5rem;">Skill Acquisition Trend</h3>
+                    <div
+                        style="height: 200px; display: flex; align-items: flex-end; gap: 1.5rem; padding-bottom: 2rem; border-bottom: 1px solid var(--glass-border);">
+                        <div
+                            style="flex: 1; height: 40%; background: var(--accent-glow); border: 1px solid var(--accent); border-radius: 4px; position: relative;">
+                            <span
+                                style="position: absolute; bottom: -25px; left: 0; width: 100%; text-align: center; font-size: 0.75rem; color: var(--text-muted);">Feb</span>
+                        </div>
+                        <div
+                            style="flex: 1; height: 55%; background: var(--accent-glow); border: 1px solid var(--accent); border-radius: 4px; position: relative;">
+                            <span
+                                style="position: absolute; bottom: -25px; left: 0; width: 100%; text-align: center; font-size: 0.75rem; color: var(--text-muted);">Mar</span>
+                        </div>
+                        <div
+                            style="flex: 1; height: 75%; background: var(--accent-glow); border: 1px solid var(--accent); border-radius: 4px; position: relative;">
+                            <span
+                                style="position: absolute; bottom: -25px; left: 0; width: 100%; text-align: center; font-size: 0.75rem; color: var(--text-muted);">Apr</span>
+                        </div>
+                        <div
+                            style="flex: 1; height: 90%; background: var(--accent); border-radius: 4px; position: relative;">
+                            <span
+                                style="position: absolute; bottom: -25px; left: 0; width: 100%; text-align: center; font-size: 0.75rem; color: var(--text-muted);">May</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Badges -->
+                <section class="glass-card fade-in" style="animation-delay: 0.4s;">
+                    <h3 style="margin-bottom: 1.5rem;">Recent Achievements</h3>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                        <div
+                            style="text-align: center; padding: 1rem; background: var(--glass-bg); border-radius: 8px;">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🔥</div>
+                            <div style="font-size: 0.75rem; font-weight: 700;">5 Day Streak</div>
+                        </div>
+                        <div
+                            style="text-align: center; padding: 1rem; background: var(--glass-bg); border-radius: 8px;">
+                            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🎯</div>
+                            <div style="font-size: 0.75rem; font-weight: 700;">Bullseye Pro</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

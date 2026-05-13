@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration | Admin Panel</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo" style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">StrideX ADMIN</div>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html"><span>Overview</span></a></li>
+                    <li class="nav-item"><a href="clubs.html"><span>Managed Clubs</span></a></li>
+                    <li class="nav-item active"><a href="register-entity.html"><span>Registration</span></a></li>
+                    <li class="nav-item"><a href="invites.html"><span>Invites</span></a></li>
+                    <li class="nav-item"><a href="finances.html"><span>Financials</span></a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div>
+                    <h1 class="fade-in">Registration Portal</h1>
+                    <p style="color: var(--text-muted);">Directly register clubs, academies, or elite coaches.</p>
+                </div>
+            </header>
+
+            <div class="registration-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                <!-- Register Club -->
+                <section class="glass-card fade-in" style="animation-delay: 0.1s;">
+                    <h3 style="margin-bottom: 1.5rem; color: var(--accent);">Register New Club</h3>
+                    <form style="display: flex; flex-direction: column; gap: 1.25rem;">
+                        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                            <label style="font-size: 0.875rem; color: var(--text-muted);">Club Name</label>
+                            <input type="text" placeholder="e.g. Sydney Thunder Academy" style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--glass-bg); color: var(--text-main); outline: none;">
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                            <label style="font-size: 0.875rem; color: var(--text-muted);">Contact Email</label>
+                            <input type="email" placeholder="admin@club.com" style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--glass-bg); color: var(--text-main); outline: none;">
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                            <label style="font-size: 0.875rem; color: var(--text-muted);">Club Type</label>
+                            <select style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--glass-bg); color: var(--text-main); outline: none;">
+                                <option>Grassroots Club</option>
+                                <option>Private Academy</option>
+                                <option>State Association</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn btn-primary" style="margin-top: 1rem;">Register Club</button>
+                    </form>
+                </section>
+
+                <!-- Register Coach -->
+                <section class="glass-card fade-in" style="animation-delay: 0.2s;">
+                    <h3 style="margin-bottom: 1.5rem; color: var(--accent);">Register Elite Coach</h3>
+                    <form style="display: flex; flex-direction: column; gap: 1.25rem;">
+                        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                            <label style="font-size: 0.875rem; color: var(--text-muted);">Full Name</label>
+                            <input type="text" placeholder="e.g. Glenn McGrath" style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--glass-bg); color: var(--text-main); outline: none;">
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                            <label style="font-size: 0.875rem; color: var(--text-muted);">Certification Level</label>
+                            <select style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--glass-bg); color: var(--text-main); outline: none;">
+                                <option>Level 1 (Community)</option>
+                                <option>Level 2 (Representative)</option>
+                                <option>Level 3 (High Performance)</option>
+                            </select>
+                        </div>
+                        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
+                            <label style="font-size: 0.875rem; color: var(--text-muted);">Assign to Club (Optional)</label>
+                            <select style="padding: 0.75rem; border-radius: 8px; border: 1px solid var(--glass-border); background: var(--glass-bg); color: var(--text-main); outline: none;">
+                                <option>None (Independent)</option>
+                                <option>Melbourne North CC</option>
+                                <option>Sydney Sixers Academy</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn btn-primary" style="margin-top: 1rem;">Register Coach</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+    </div>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
