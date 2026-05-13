@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managed Teams | Parent Portal</title>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="logo" style="font-size: 1.5rem; font-weight: 800; color: var(--accent);">StrideX</div>
+            <nav>
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html"><span>Dashboard</span></a></li>
+                    <li class="nav-item"><a href="students.html"><span>My Children</span></a></li>
+                    <li class="nav-item"><a href="teams.html"><span>Manage Teams</span></a></li>
+                    <li class="nav-item"><a href="book-session.html"><span>Book Session</span></a></li>
+                    <li class="nav-item"><a href="search-coaches.html"><span>Find a Coach</span></a></li>
+                    <li class="nav-item"><a href="payments.html"><span>Payments</span></a></li>
+                    <li class="nav-item"><a href="progress.html"><span>Progress</span></a></li>
+                    <li class="nav-item"><a href="reports.html"><span>Reports</span></a></li>
+                </ul>            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <div>
+                    <h1 class="fade-in">Managed Teams</h1>
+                    <p style="color: var(--text-muted);">View and manage the squads you are team manager for.</p>
+                </div>
+            </header>
+
+            <div class="teams-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 1.5rem;">
+                <!-- Team 1 -->
+                <div class="glass-card fade-in" style="animation-delay: 0.1s;">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem;">
+                        <div>
+                            <h2 style="font-size: 1.25rem;">U14 Representative Squad</h2>
+                            <p style="font-size: 0.875rem; color: var(--text-muted);">Melbourne North CC</p>
+                        </div>
+                        <span style="background: var(--accent-glow); color: var(--accent); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.75rem; font-weight: 700;">MANAGER</span>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="background: var(--glass-bg); padding: 0.75rem; border-radius: 8px; text-align: center;">
+                            <div style="font-size: 0.75rem; color: var(--text-muted);">STUDENTS</div>
+                            <div style="font-size: 1.25rem; font-weight: 700;">14</div>
+                        </div>
+                        <div style="background: var(--glass-bg); padding: 0.75rem; border-radius: 8px; text-align: center;">
+                            <div style="font-size: 0.75rem; color: var(--text-muted);">COACHES</div>
+                            <div style="font-size: 1.25rem; font-weight: 700;">2</div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 0.5rem;">
+                        <button class="btn btn-primary" style="flex: 1; font-size: 0.75rem;">View Squad</button>
+                        <button class="btn btn-outline" style="flex: 1; font-size: 0.75rem;">Announcements</button>
+                    </div>
+                </div>
+
+                <!-- Team 2 -->
+                <div class="glass-card fade-in" style="animation-delay: 0.2s;">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem;">
+                        <div>
+                            <h2 style="font-size: 1.25rem;">Junior Development Academy</h2>
+                            <p style="font-size: 0.875rem; color: var(--text-muted);">Bayside Cricket Hub</p>
+                        </div>
+                        <span style="background: var(--accent-glow); color: var(--accent); padding: 0.25rem 0.75rem; border-radius: 4px; font-size: 0.75rem; font-weight: 700;">MANAGER</span>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.5rem;">
+                        <div style="background: var(--glass-bg); padding: 0.75rem; border-radius: 8px; text-align: center;">
+                            <div style="font-size: 0.75rem; color: var(--text-muted);">STUDENTS</div>
+                            <div style="font-size: 1.25rem; font-weight: 700;">22</div>
+                        </div>
+                        <div style="background: var(--glass-bg); padding: 0.75rem; border-radius: 8px; text-align: center;">
+                            <div style="font-size: 0.75rem; color: var(--text-muted);">COACHES</div>
+                            <div style="font-size: 1.25rem; font-weight: 700;">3</div>
+                        </div>
+                    </div>
+
+                    <div style="display: flex; gap: 0.5rem;">
+                        <button class="btn btn-primary" style="flex: 1; font-size: 0.75rem;">View Squad</button>
+                        <button class="btn btn-outline" style="flex: 1; font-size: 0.75rem;">Announcements</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
