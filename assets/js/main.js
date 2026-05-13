@@ -19,6 +19,31 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// Mobile Sidebar Toggle
+document.addEventListener('DOMContentLoaded', () => {
+  const sidebar = document.querySelector('.sidebar');
+  const toggle = document.createElement('div');
+  toggle.className = 'mobile-toggle';
+  toggle.innerHTML = '☰';
+  document.body.appendChild(toggle);
+
+  toggle.addEventListener('click', () => {
+    sidebar.classList.toggle('active');
+    toggle.innerHTML = sidebar.classList.contains('active') ? '✕' : '☰';
+  });
+
+  // Close sidebar when clicking outside on mobile
+  document.addEventListener('click', (e) => {
+    if (window.innerWidth <= 768 && 
+        sidebar.classList.contains('active') && 
+        !sidebar.contains(e.target) && 
+        !toggle.contains(e.target)) {
+      sidebar.classList.remove('active');
+      toggle.innerHTML = '☰';
+    }
+  });
+});
+
 // Mock Data Utils
 const formatCurrency = (amount) => {
   return new Intl.NumberFormat('en-AU', { style: 'currency', currency: 'AUD' }).format(amount);
